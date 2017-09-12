@@ -15,7 +15,7 @@ public class DemoRaise {
 		salary = input.nextInt();
 		System.out.println("Enter a starting wage:");
 		startingWage = input.nextInt();
-		predictRaise(1000);
+		predictRaise(salary);
 		predictRaise(startingWage);
 	
 	}
