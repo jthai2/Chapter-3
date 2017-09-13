@@ -6,31 +6,32 @@ public class NumbersDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int number;
+		int A;
 		int anotherNumber;
 		int twiceTheNumber;
 		int numberPlusFive;
 		int numberSquared;
-		Scanner input = new Scanner(System.in);
+		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.print("Enter a number >>");
-		number = input.nextInt();
+		A = keyboard.nextInt();
 		System.out.print("Enter another number >>");
-		anotherNumber = input.nextInt();
+		anotherNumber = keyboard.nextInt();
 		
-		displayTwiceTheNumber();
-		twiceTheNumber = number * 2;
+		displayTwiceTheNumber(A);
 		
 		displayNumberPlusFive();
-		numberPlusFive = number + 5;
 		
 		displayNumberSquared();
-		numberSquared = number * number;
 		
+		
+		numberPlusFive = number + 5;
+		numberSquared = number * number;	
 	}
 	
-	public static void displayTwiceTheNumber()
+	public static void displayTwiceTheNumber(int number)
 	{
+		int twiceTheNumber = number * 2;
 		System.out.println("Twice the number of " + number + "is " + twiceTheNumber);
 	}
 	
