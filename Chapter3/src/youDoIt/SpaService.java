@@ -4,6 +4,10 @@ public class SpaService {
 		// TODO Auto-generated method stub
 		private String serviceDescription;
 		private double price;
+		public SpaService()
+		{
+			
+		}
 	
 	
 	
