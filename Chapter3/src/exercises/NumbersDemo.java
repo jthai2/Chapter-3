@@ -7,42 +7,61 @@ public class NumbersDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int A;
-		int anotherNumber;
-		int twiceTheNumber;
-		int numberPlusFive;
-		int numberSquared;
+		int B;
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.print("Enter a number >>");
 		A = keyboard.nextInt();
 		System.out.print("Enter another number >>");
-		anotherNumber = keyboard.nextInt();
+		B = keyboard.nextInt();
 		
 		displayTwiceTheNumber(A);
 		
-		displayNumberPlusFive();
+		displayNumberPlusFive(A);
 		
-		displayNumberSquared();
+		displayNumberSquared(A);	
 		
+		displayTwiceTheNumberB(B);
 		
-		numberPlusFive = number + 5;
-		numberSquared = number * number;	
+		displayNumberPlusFiveB(B);
+		
+		displayNumberSquaredB(B);
 	}
 	
 	public static void displayTwiceTheNumber(int number)
 	{
 		int twiceTheNumber = number * 2;
-		System.out.println("Twice the number of " + number + "is " + twiceTheNumber);
+		System.out.println("Twice the number of " + number + " is " + twiceTheNumber);
 	}
 	
-	public static void displayNumberPlusFive()
+	public static void displayNumberPlusFive(int number)
 	{
-		System.out.println(number + "plus 5 = " + numberPlusFive);
+		int numberPlusFive = number + 5;
+		System.out.println(number + " plus 5 = " + numberPlusFive);
 	}
 	
-	public static void displayNumberSquared()
+	public static void displayNumberSquared(int number)
 	{
-		System.out.println(number + "squared is equal to " + numberSquared);
+		int numberSquared = number * number;
+		System.out.println(number + " squared is equal to " + numberSquared);
+	}
+	
+	public static void displayTwiceTheNumberB(int number)
+	{
+		int twiceTheNumberB = number * 2;
+		System.out.println("Twice the number of " + number + " is " + twiceTheNumberB);
+	}
+	
+	public static void displayNumberPlusFiveB(int number)
+	{
+		int numberPlusFiveB = number + 5;
+		System.out.println(number + " plus 5 = " + numberPlusFiveB);
+	}
+	
+	public static void displayNumberSquaredB(int number)
+	{
+		int numberSquaredB = number * number;
+		System.out.println(number + " squared is equal to " + numberSquaredB);
 	}
 
 }
