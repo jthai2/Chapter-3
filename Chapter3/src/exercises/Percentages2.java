@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Scanner;
 
-public class Percentages {
+public class Percentages2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
